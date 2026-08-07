@@ -84,7 +84,7 @@ def main():
     verificar_fibonacci(num)
     verificar_primo(num)
     print()
- 
+
 main()
 
 
