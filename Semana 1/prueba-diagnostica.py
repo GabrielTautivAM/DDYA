@@ -35,6 +35,18 @@ def verificar_fibonacci(num):
     else:
         print("el numero no es fibonacci")
 
+def sumar_intermedios():
+    print()
+    print("ahora se hara la suma de intermedios")
+    print("por favor digite un numero")
+    x = int(input())
+    print("digite su segundo numero")
+    y = int(input())
+    cont = 0
+    for rep in range (x+1, y):
+        cont += rep
+    print("la suma de intermedios es", cont)
+    print()
 
 def verificar_primo(num):
     contador = 0 
@@ -52,6 +64,7 @@ def main():
     x= verificar_par(num)
     verificar_fibonacci(num)
     verificar_primo(num)
+    sumar_intermedios()
     print()
     print("ahora haremos lo mismo pero con su carne estudiantil")
     num = solicitar_numero()
