@@ -22,6 +22,15 @@ def verificar_par(num):
         x=1
     return x 
 
+def potencias(x,num):
+    numero = 0
+    if x == 2:
+        numero = num**3
+        print("como el numero es par, su cubo es", numero)
+    else:
+        numero = num**2
+        print("como el numero es impar, su cubo es", numero)
+    
 def verificar_fibonacci(num):
     a = 0
     b = 1
@@ -62,6 +71,7 @@ def main():
     num = solicitar_numero()
     verificar_signos(num)
     x= verificar_par(num)
+    potencias(x,num)
     verificar_fibonacci(num)
     verificar_primo(num)
     sumar_intermedios()
@@ -70,6 +80,7 @@ def main():
     num = solicitar_numero()
     verificar_signos(num)
     x= verificar_par(num)
+    potencias(x,num)
     verificar_fibonacci(num)
     verificar_primo(num)
     print()
